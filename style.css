@@ -84,6 +84,7 @@ h1 {
 
 .material-symbols-outlined {
     width: 30px;
+    cursor: pointer;
 }
 
 #main {
@@ -104,7 +105,6 @@ input {
     padding: 5px;
     border-radius: 0%;
     border: 3px solid var(--cor2);
-    opacity: 1;
 }
 
 input:hover {
@@ -117,8 +117,9 @@ img {
     position: absolute;
     transform: translate(-110px);
     width: 150px;
-    opacity: 1;
+    animation: fadeIn 2s ease-in-out;
 }
+
 
 div#txt {
     background-color: var(--cor5);
@@ -135,7 +136,7 @@ div#txt {
     0 5px 0 0 var(--cor5),
     -5px 0 0 0 var(--cor5),
     5px 0 0 0 var(--cor5);
-    opacity: 1;
+    animation: fadeIn 2s ease-in-out;
 }
 
 div#txt::after  {
@@ -146,6 +147,15 @@ div#txt::after  {
     position: absolute;
     transform: translate(-40px, -85px);
     clip-path: polygon(100% 18%, 0 0, 99% 100%);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @media screen and (min-width:500px) {
