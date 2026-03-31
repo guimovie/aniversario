@@ -30,17 +30,20 @@
 }
 
 :root {
-    --cor1: #BF0615;
-    --cor2: #BF0628;
-    --cor3: #D95970;
-    --cor4: #A6922E;
-    --cor5: #F2F2F2;
+    --cor1: #d10415;
+    --cor2: #91000c;
+    --cor3: #f5617c;
+    --cor4: #af9826;
+    --cor5: #ffd4d4;
     --font1: "Ballet", cursive;
     --font2: "Silkscreen", sans-serif;
 }
 
 body {
+    /*
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    */
+    background-color: var(--cor5);
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -55,8 +58,8 @@ main {
     width: 90vw;
     padding: 10px;
     border-radius: 2px;
-    outline: 1px solid var(--cor5);
     border: 4px solid var(--cor1);
+    box-shadow: 6px 6px 1px var(--cor2);
 }
 
 #header {
