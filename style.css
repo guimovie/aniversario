@@ -40,7 +40,7 @@
 }
 
 body {
-    background-color: var(--cor2);
+    background-color: var(--cor5);
     width: 100vw;
     height: 97vh;
     display: grid;
@@ -54,8 +54,9 @@ main {
     font-size: 60%;
     width: 90vw;
     padding: 10px;
-    border-radius: 10px;
-    border: 2px solid var(--cor1);
+    border-radius: 5px;
+    outline: 4px solid var(--cor2);
+    border: 4px solid var(--cor1);
 }
 
 #header {
@@ -70,4 +71,10 @@ h1 {
 
 .material-symbols-outlined {
     width: 30px;
+}
+
+#main {
+    width: 100%;
+    height: 200px;
+    border: 4px solid var(--cor2);
 }
